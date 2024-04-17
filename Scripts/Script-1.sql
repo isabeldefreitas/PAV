@@ -157,3 +157,15 @@ CREATE TABLE MovimentoCaixa (
     FOREIGN KEY (id_venda) REFERENCES Venda(id_venda)
 );
 
+CREATE TABLE Tipo (
+    id_tipo INT PRIMARY KEY,
+    nome VARCHAR(100)
+);
+
+SHOW CREATE table Tipo;
+
+ALTER TABLE Produto ADD CONSTRAINT id_tipo FOREIGN KEY (id_tipo) REFERENCES Tipo(id_tipo);
+
+ALTER TABLE Produto ADD COLUMN id_tipo INT;
+
+

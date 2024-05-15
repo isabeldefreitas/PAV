@@ -15,7 +15,7 @@ CREATE TABLE Produto (
     FOREIGN KEY (id_tipo) REFERENCES Tipo(id_tipo)
 );
 
--- Tabela de Clientes
+-- Tabela de Clientes 
 CREATE TABLE Cliente (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),

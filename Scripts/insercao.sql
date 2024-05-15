@@ -1,5 +1,6 @@
 use `pavbanconovo`;
 
+
 INSERT INTO Produto (nome, quantidade_estoque, preco, unidade, id_fornecedor, id_tipo) 
 VALUES 
 ('Arroz Integral', '50', '7.99', 'kg', 1, 1),

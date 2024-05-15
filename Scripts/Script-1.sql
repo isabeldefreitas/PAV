@@ -11,7 +11,7 @@ CREATE TABLE Produto (
     FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor)
 );
 
--- Tabela de Clientes
+-- Tabela de Clientes 
 CREATE TABLE Cliente (
     id_cliente INT PRIMARY KEY,
     nome VARCHAR(100),

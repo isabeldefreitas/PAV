@@ -1,7 +1,6 @@
 
 use `pavbanconovo`;
 
-
 -- Tabela de Produtos
 CREATE TABLE Produto (
     id_produto INT AUTO_INCREMENT PRIMARY KEY,
@@ -184,7 +183,7 @@ CREATE TABLE Tipo (
 );
 
 
--- -------------------------------------------------------------------------
+
 
 
 

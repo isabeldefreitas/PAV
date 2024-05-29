@@ -112,12 +112,12 @@ CREATE TABLE ItemCompra (
     id_itemcompra INT AUTO_INCREMENT PRIMARY KEY,
     id_compra INT,
     numeroItem INT,
-    id_produto INT,
+    id_produtofornecedor INT,
     quantidade VARCHAR(10),
     valor_unitario DECIMAL(10, 2),
     total_item DECIMAL(10, 2),
     FOREIGN KEY (id_compra) REFERENCES Compra(id_compra),
-    FOREIGN KEY (id_produto) REFERENCES Produto(id_produto)
+    FOREIGN KEY (id_produtofornecedor) REFERENCES ProdutoFornecedor(id_produtofornecedor)
 );
 
 -- Tabela de Contas a Receber

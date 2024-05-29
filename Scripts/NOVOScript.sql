@@ -196,11 +196,14 @@ CREATE TABLE ProdutoFornecedor (
 );
 
 
-
-
-
-
-
+CREATE TABLE FormaPagamentoCompra (
+	id_formapagamentocompra INT AUTO_INCREMENT PRIMARY KEY,
+    id_compra INT,
+    id_forma_pagamento INT,
+    valor DECIMAL(10, 2),
+    FOREIGN KEY (id_compra) REFERENCES Compra(id_compra),
+    FOREIGN KEY (id_forma_pagamento) REFERENCES FormaPagamento(id_forma_pagamento)
+);
 
 
 

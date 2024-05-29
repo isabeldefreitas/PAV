@@ -82,5 +82,59 @@ VALUES
 ('Crediario');
 
 
+-- Distribuidora ABC (ID: 1)
+INSERT INTO ProdutoFornecedor (nome, quantidade_estoque, preco, unidade, id_fornecedor, id_tipo) 
+VALUES 
+('Arroz Integral', '10', '7.99', 'kg', 1, 1),
+('Feijão Preto', '10', '6.50', 'kg', 1, 1),
+('Macarrão Espaguete', '10', '2.99', 'kg', 1, 1),
+('Açúcar Mascavo', '10', '8.50', 'kg', 1, 1),
+('Ovos Brancos', '10', '0.50', 'unidade', 1, 1),
+('Frango Congelado', '10', '9.99', 'kg', 1, 1),
+('Batata Inglesa', '10', '2.00', 'kg', 1, 1),
+('Tomate', '10', '3.50', 'kg', 1, 1),
+('Banana Prata', '10', '2.99', 'kg', 1, 1),
+('Arroz Parboilizado', '10', '8.99', 'kg', 1, 1);
 
+-- Tecnosmart LTDA (ID: 2)
+INSERT INTO ProdutoFornecedor (nome, quantidade_estoque, preco, unidade, id_fornecedor, id_tipo) 
+VALUES 
+('Notebook HP', '10', '3499.99', 'unidade', 2, 2),
+('Smartphone Samsung', '10', '1599.99', 'unidade', 2, 2),
+('Notebook Dell Inspiron 15', '10', '3500.00', 'unidade', 2, 2),
+('Smart TV LG 55 Polegadas', '10', '2500.00', 'unidade', 2, 2),
+('Fone de Ouvido Bluetooth JBL', '10', '150.00', 'unidade', 2, 2),
+('Carregador Portátil Xiaomi', '10', '50.00', 'unidade', 2, 2),
+('Câmera Digital Canon EOS Rebel T7', '10', '1500.00', 'unidade', 2, 2),
+('Console de Videogame PlayStation 5', '10', '4500.00', 'unidade', 2, 2),
+('Roteador Wi-Fi TP-Link Archer C6', '10', '200.00', 'unidade', 2, 2),
+('Impressora Multifuncional Epson EcoTank', '10', '800.00', 'unidade', 2, 2);
+
+-- VestBem Comércio (ID: 3)
+INSERT INTO ProdutoFornecedor (nome, quantidade_estoque, preco, unidade, id_fornecedor, id_tipo) 
+VALUES 
+('Camiseta Branca', '10', '19.99', 'unidade', 3, 3),
+('Calça Jeans', '10', '49.99', 'unidade', 3, 3),
+('Camiseta Básica Preta', '10', '20.00', 'unidade', 3, 3),
+('Calça Jeans Masculina', '10', '80.00', 'unidade', 3, 3),
+('Vestido Floral', '10', '60.00', 'unidade', 3, 3),
+('Blusa de Frio', '10', '70.00', 'unidade', 3, 3),
+('Bermuda Jeans', '10', '50.00', 'unidade', 3, 3),
+('Saia Midi Plissada', '10', '45.00', 'unidade', 3, 3),
+('Camisa Social Masculina', '10', '100.00', 'unidade', 3, 3),
+('Jaqueta de Couro', '10', '150.00', 'unidade', 3, 3);
+
+-- Beleza e Estilo Ltda (ID: 4)
+INSERT INTO ProdutoFornecedor (nome, quantidade_estoque, preco, unidade, id_fornecedor, id_tipo) 
+VALUES 
+('Shampoo Anticaspa', '10', '12.50', 'unidade', 4, 4),
+('Shampoo Pantene 3 em 1', '10', '15.00', 'litro', 4, 4),
+('Protetor Solar FPS 50', '10', '29.90', 'unidade', 4, 4),
+('Protetor Solar Neutrogena FPS 50', '10', '40.00', 'unidade', 4, 4),
+('Batom Ruby Woo da MAC', '10', '50.00', 'unidade', 4, 4),
+('Creme Hidratante Nivea Soft', '10', '20.00', 'unidade', 4, 4),
+('Fone de Ouvido Bluetooth JBL', '10', '150.00', 'unidade', 4, 4),
+('Carregador Portátil Xiaomi', '10', '50.00', 'unidade', 4, 4),
+('Mouse Gamer Logitech G502', '10', '100.00', 'unidade', 4, 4),
+('Quebra-Cabeça 1000 Peças', '10', '20.00', 'unidade', 4, 4);
 

@@ -183,7 +183,17 @@ CREATE TABLE Tipo (
 );
 
 
-
+CREATE TABLE ProdutoFornecedor (
+    id_produtoFornecedor INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    quantidade_estoque VARCHAR(10),
+    preco DECIMAL(10, 2),
+    unidade VARCHAR(20),
+    id_fornecedor INT,
+    id_tipo INT,
+    FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor),
+    FOREIGN KEY (id_tipo) REFERENCES Tipo(id_tipo)
+);
 
 
 

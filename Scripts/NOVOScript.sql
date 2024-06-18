@@ -112,12 +112,12 @@ CREATE TABLE ItemCompra (
     id_itemcompra INT AUTO_INCREMENT PRIMARY KEY,
     id_compra INT,
     numeroItem INT,
-    id_produtofornecedor INT,
+    id_produto INT,
     quantidade VARCHAR(10),
     valor_unitario DECIMAL(10, 2),
     total_item DECIMAL(10, 2),
     FOREIGN KEY (id_compra) REFERENCES Compra(id_compra),
-    FOREIGN KEY (id_produtofornecedor) REFERENCES ProdutoFornecedor(id_produtofornecedor)
+    FOREIGN KEY (id_produto) REFERENCES Produto(id_produto)
 );
 
 -- Tabela de Contas a Receber
@@ -183,18 +183,6 @@ CREATE TABLE Tipo (
 );
 
 
-CREATE TABLE ProdutoFornecedor (
-    id_produtoFornecedor INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100),
-    quantidade_estoque VARCHAR(10),
-    preco DECIMAL(10, 2),
-    unidade VARCHAR(20),
-    id_fornecedor INT,
-    id_tipo INT,
-    FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor),
-    FOREIGN KEY (id_tipo) REFERENCES Tipo(id_tipo)
-);
-
 
 CREATE TABLE FormaPagamentoCompra (
 	id_formapagamentocompra INT AUTO_INCREMENT PRIMARY KEY,
@@ -205,6 +193,12 @@ CREATE TABLE FormaPagamentoCompra (
     FOREIGN KEY (id_forma_pagamento) REFERENCES FormaPagamento(id_forma_pagamento)
 );
 
+ALTER TABLE Conta_Pagar
+ADD COLUMN id_compra INT AFTER id_conta_pagar;
+
+ALTER TABLE Conta_Pagar
+ADD CONSTRAINT FK_ContaPagar_Compra
+FOREIGN KEY (id_compra) REFERENCES Compra(id_compra);
 
 
 

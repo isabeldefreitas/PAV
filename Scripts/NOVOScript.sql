@@ -200,7 +200,6 @@ ALTER TABLE Conta_Pagar
 ADD CONSTRAINT FK_ContaPagar_Compra
 FOREIGN KEY (id_compra) REFERENCES Compra(id_compra);
 
+ALTER TABLE Conta_Receber ADD COLUMN id_venda INT;
 
-
-
-
+ALTER TABLE MovimentoCaixa ADD COLUMN id_conta_receber INT;
